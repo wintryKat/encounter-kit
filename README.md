@@ -102,7 +102,7 @@ for context, and consult Lessons Learned before starting new work.
 
 ## Customization
 
-The `operator` field defaults to `"kat"`. Change it in each platform file.
+The `operator` field defaults to `"Kat"`. Change it in each platform file.
 To add a new platform, create a directory under `agents/`, copy the closest
 existing definition, adapt the platform-specific guidance, and update
 `scripts/install.sh`.

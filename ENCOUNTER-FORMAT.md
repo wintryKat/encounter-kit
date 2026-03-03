@@ -58,7 +58,7 @@ status: complete                           # complete | partial | continuation
 session_duration_minutes: 187              # Approximate wall-clock session length
 related_encounters: []                     # Filenames of related encounter docs
 continuation_of: ""                        # Filename if this continues a prior encounter
-operator: "kat"                            # Who prompted the session
+operator: "Kat"                            # Who prompted the session
 format_version: "1.0.0"                    # Spec version
 ---
 ```

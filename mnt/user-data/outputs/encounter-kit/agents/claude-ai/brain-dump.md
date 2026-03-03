@@ -89,7 +89,7 @@ status: complete
 session_duration_minutes: 0
 related_encounters: []
 continuation_of: ""
-operator: "kat"
+operator: "Kat"
 format_version: "1.0.0"
 ---
 ```
