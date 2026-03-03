@@ -25,9 +25,12 @@ injected into a new agent session as context.
 | GitHub Copilot | `.github/agents/brain-dump.chatagent` | `@brain-dump <title>` |
 | Claude Code | `.claude/commands/brain-dump.md` | `/brain-dump <title>` |
 | Cursor | `.cursor/rules/brain-dump.mdc` | `@brain-dump` or natural language |
+| Windsurf | `.windsurf/rules/brain-dump.md` | `@brain-dump` or natural language |
+| Cline | `.cline/rules/brain-dump.md` | Natural language |
+| Aider | `.aider/conventions/brain-dump.md` | `/chat` or natural language |
 | Claude.ai | Project instructions (manual) | Ask for a brain dump |
 
-All four produce files following the same canonical format spec.
+All platforms produce files following the same canonical format spec.
 
 ## Quick start
 
@@ -61,6 +64,12 @@ encounter-kit/
       brain-dump.md              # Claude Code custom slash command
     cursor/
       brain-dump.mdc             # Cursor rules file
+    windsurf/
+      brain-dump.md              # Windsurf rules file
+    cline/
+      brain-dump.md              # Cline custom rules
+    aider/
+      brain-dump.md              # Aider conventions
     claude-ai/
       brain-dump.md              # Claude.ai project instructions
   examples/

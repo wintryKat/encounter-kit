@@ -33,6 +33,9 @@ while [[ $# -gt 0 ]]; do
             echo "  .github/prompts/brain-dump.prompt.md"
             echo "  .claude/prompts/brain-dump.md"
             echo "  .cursor/rules/brain-dump.mdc"
+            echo "  .windsurf/rules/brain-dump.md"
+            echo "  .cline/rules/brain-dump.md"
+            echo "  .aider/conventions/brain-dump.md"
             exit 0
             ;;
         *) TARGET="$1"; shift ;;
@@ -52,6 +55,9 @@ mkdir -p "$TARGET/docs/encounters"
 mkdir -p "$TARGET/.github/prompts"
 mkdir -p "$TARGET/.claude/prompts"
 mkdir -p "$TARGET/.cursor/rules"
+mkdir -p "$TARGET/.windsurf/rules"
+mkdir -p "$TARGET/.cline/rules"
+mkdir -p "$TARGET/.aider/conventions"
 
 install_file() {
     local src="$1"
@@ -77,6 +83,15 @@ install_file "$KIT_DIR/agents/claude-code/brain-dump.md" \
 
 install_file "$KIT_DIR/agents/cursor/brain-dump.mdc" \
              "$TARGET/.cursor/rules/brain-dump.mdc"
+
+install_file "$KIT_DIR/agents/windsurf/brain-dump.md" \
+             "$TARGET/.windsurf/rules/brain-dump.md"
+
+install_file "$KIT_DIR/agents/cline/brain-dump.md" \
+             "$TARGET/.cline/rules/brain-dump.md"
+
+install_file "$KIT_DIR/agents/aider/brain-dump.md" \
+             "$TARGET/.aider/conventions/brain-dump.md"
 
 echo ""
 echo "Installation complete."
