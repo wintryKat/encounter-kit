@@ -1,0 +1,15 @@
+# Encounter documents belong in target repos, not here
+# (examples/ is tracked intentionally)
+docs/encounters/*.md
+!docs/encounters/ENCOUNTER-FORMAT.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
