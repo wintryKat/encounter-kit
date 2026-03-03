@@ -30,8 +30,8 @@ while [[ $# -gt 0 ]]; do
             echo ""
             echo "Files installed:"
             echo "  docs/encounters/ENCOUNTER-FORMAT.md"
-            echo "  .github/agents/brain-dump.chatagent"
-            echo "  .claude/commands/brain-dump.md"
+            echo "  .github/prompts/brain-dump.prompt.md"
+            echo "  .claude/prompts/brain-dump.md"
             echo "  .cursor/rules/brain-dump.mdc"
             exit 0
             ;;
@@ -49,8 +49,8 @@ echo ""
 
 # Create target directories
 mkdir -p "$TARGET/docs/encounters"
-mkdir -p "$TARGET/.github/agents"
-mkdir -p "$TARGET/.claude/commands"
+mkdir -p "$TARGET/.github/prompts"
+mkdir -p "$TARGET/.claude/prompts"
 mkdir -p "$TARGET/.cursor/rules"
 
 install_file() {
@@ -69,11 +69,11 @@ install_file() {
 install_file "$KIT_DIR/spec/ENCOUNTER-FORMAT.md" \
              "$TARGET/docs/encounters/ENCOUNTER-FORMAT.md"
 
-install_file "$KIT_DIR/agents/github-copilot/brain-dump.chatagent" \
-             "$TARGET/.github/agents/brain-dump.chatagent"
+install_file "$KIT_DIR/agents/github-copilot/brain-dump.prompt.md" \
+             "$TARGET/.github/prompts/brain-dump.prompt.md"
 
 install_file "$KIT_DIR/agents/claude-code/brain-dump.md" \
-             "$TARGET/.claude/commands/brain-dump.md"
+             "$TARGET/.claude/prompts/brain-dump.md"
 
 install_file "$KIT_DIR/agents/cursor/brain-dump.mdc" \
              "$TARGET/.cursor/rules/brain-dump.mdc"
